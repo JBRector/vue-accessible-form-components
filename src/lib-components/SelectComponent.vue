@@ -11,7 +11,7 @@
         :id="id"
         :name="id"
         :aria-describedby="errorText !== '' ? errorId : null"
-        :aria-invalid="errorText !== '' ? 'true' : null"
+        :aria-invalid="isInvalid"
         @change="fieldChange || null"
       >
         <option :value="defaultValue">{{defaultValue}}</option>

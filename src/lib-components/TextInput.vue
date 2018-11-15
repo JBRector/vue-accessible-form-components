@@ -12,7 +12,7 @@
       :id="id"
       :name="id"
       :aria-describedby="errorText !== '' ? errorId : null"
-      :aria-invalid="errorText !== '' ? 'true' : null"
+      :aria-invalid="isInvalid"
       :maxlength="maxLength || null"
       :placeholder="placeholder || null"
     >

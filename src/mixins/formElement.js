@@ -23,6 +23,10 @@ export const formElement = {
   computed: {
     errorId() {
       return `${this.id}-error`;
+    },
+
+    isInvalid() {
+      return this.errorText !== '';
     }
   }
 };
