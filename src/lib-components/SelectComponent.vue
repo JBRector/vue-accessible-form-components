@@ -9,7 +9,9 @@
       <select
         v-model="fieldValue"
         :id="id"
+        :name="id"
         :aria-describedby="errorText !== '' ? errorId : null"
+        :aria-invalid="errorText !== '' ? 'true' : null"
         @change="fieldChange || null"
       >
         <option :value="defaultValue">{{defaultValue}}</option>
